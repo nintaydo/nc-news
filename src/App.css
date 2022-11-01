@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: silver;
 }
 
 .App-logo {
@@ -35,4 +36,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.articlePage {
+  width: 500px;
+  height: 1fr 1fr 1fr;
+  background-color: slategray;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px
+  
+}
+
+.article_id {
+    list-style: none;
+    
+}
+.article_title {
+
+  list-style: none;
+}
+
+.article_topic {
+
+  list-style: none;
+}
+
+.article_author {
+  list-style: none;
+}
+
+.article_body {
+  list-style: none;
+  background-color: lightblue;
+  width: 435px;
+  height: 110px;
+  overflow: scroll;
+}
+
+.article_comment_count {
+  list-style: none;
+}
+
+.article_votes {
+  list-style: none;
 }
