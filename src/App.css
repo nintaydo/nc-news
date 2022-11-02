@@ -40,26 +40,22 @@
 
 .articlePage {
   width: 500px;
-  height: 1fr 1fr 1fr;
+  height: 350px;
   background-color: slategray;
   border: 1px solid black;
   display: inline-block;
   vertical-align: top;
-  margin: 2px
-  
+  margin: 2px;
 }
 
 .article_id {
-    list-style: none;
-    
+  list-style: none;
 }
 .article_title {
-
   list-style: none;
 }
 
 .article_topic {
-
   list-style: none;
 }
 
@@ -81,4 +77,36 @@
 
 .article_votes {
   list-style: none;
+}
+
+.topicsPage {
+  width: 500px;
+  height: 300;
+  background-color: slategray;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px;
+}
+
+.topic_desc {
+  list-style: none;
+}
+
+.topic_slug {
+  list-style: none;
+}
+
+.topicsList {
+  background-color: slategrey;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
