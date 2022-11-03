@@ -1,16 +1,21 @@
 import { useEffect, useState } from "react";
+import {fetchTopics} from "../api"
 import { Link } from "react-router-dom";
 
 const Topics = () => {
   const [topics, setTopics] = useState([]);
 
+  const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
-    fetch(`https://project-the-first.herokuapp.com/api/topics`)
-      .then((response) => response.json())
-      .then(({ topics }) => {
+    setIsLoading(true)
+    fetchTopics().then(( topics ) => {
         setTopics(topics);
+        setIsLoading(false)
       });
   }, []);
+
+  if(isLoading) return <h3>loading...</h3>
 
   return (
     <div className="topicsList">
