@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: silver;
+  
 }
 
 .App-logo {
@@ -8,15 +9,18 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (mid-width: 600px) {
+  .articleList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 25vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,33 +33,67 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homePage {
+  margin-bottom: 100%;
+  background-color: silver;
 }
 
-.articlePage {
-  width: 500px;
-  height: 350px;
-  background-color: slategray;
+
+.articleList {
+  background-color: slategrey;
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+.articleCard {
+  width: 300px;
+  height: 385px;
+  background-color: rgb(209, 213, 216);
   border: 1px solid black;
   display: inline-block;
   vertical-align: top;
-  margin: 2px;
+  margin: 2px
+  
 }
+
+/* .singleArticlePage {
+  
+} */
+
+.singleArticleCard {
+  width: 100%;
+  height: 445px;
+  background-color: rgb(209, 213, 216);
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 100%;
+}
+
+.commentCard {
+  width: 500px;
+  height: 350px;
+  background-color: rgb(209, 213, 216);
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px
+  
+}
+
 
 .article_id {
   list-style: none;
+  
 }
 .article_title {
+  
   list-style: none;
 }
 
 .article_topic {
+  
   list-style: none;
 }
 
@@ -66,9 +104,10 @@
 .article_body {
   list-style: none;
   background-color: lightblue;
-  width: 435px;
+  width: auto;
   height: 110px;
   overflow: scroll;
+  margin: 30px
 }
 
 .article_comment_count {
@@ -79,6 +118,7 @@
   list-style: none;
 }
 
+
 .topicsPage {
   width: 500px;
   height: 300;
@@ -86,7 +126,7 @@
   border: 1px solid black;
   display: inline-block;
   vertical-align: top;
-  margin: 2px;
+  margin: 2px
 }
 
 .topic_desc {
@@ -98,7 +138,7 @@
 }
 
 .topicsList {
-  background-color: slategrey;
+  background-color: slategrey
 }
 
 .footer {
